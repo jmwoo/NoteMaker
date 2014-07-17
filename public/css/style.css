@@ -1,0 +1,27 @@
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+#entries {
+  /*list-style-type: none;*/
+}
+
+.entry-date {
+	color: red;
+}
+
+.entry-text {
+}
+
+.entry-tags {
+	color: blue;
+}
+
+#input-form {
+	/*border: 1px solid black;*/
+}
+
+#search-form {
+	/*border: 1px solid black;*/
+}

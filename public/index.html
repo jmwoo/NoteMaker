@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- icanhaz template -->
+  <script id="entry" type="text/html">
+    <li>
+    <p class="entry-date">{{prettyDate}}</p>
+    {{#hasTags}}
+    	<p class="entry-tags">[{{tags}}]</p>
+    {{/hasTags}}
+    <p class="entry-text">{{text}}</p>
+    <hr>
+    </li>
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12">
+        <h2>NoteMaker</h2>
+      </div>
+      <div class="col-md-4 column">
+        <form role="form" id="input-form">
+          <div class="form-group">
+          	<label for="input-tags">Tags</label>
+            <input type="text" class="form-control" id="input-tags" />
+          </div>
+          <div class="form-group">
+          	<label for="input-text">Text</label>
+            <textarea id="input-text" class="form-control"></textarea>
+          </div>
+        </form>
+        <form role="form" id="search-form">
+        	<div class="form-group">
+        		<label for="search-text">Search Text</label>
+        		<input type="text" class="form-control" id="search-text" />
+        	</div>
+        	<div class="form-group">
+        		<label for="search-tags">Search Tags</label>
+        		<input type="text" class="form-control" id="search-tags" />
+        	</div>
+        </form>
+      </div>
+      <div class="col-md-8 column">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Notes</h3>
+          </div>
+          <div class="panel-body">
+            <ol id="entries" reversed></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ICanHaz.js/0.10.3/ICanHaz.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
